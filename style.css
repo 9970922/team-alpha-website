@@ -678,6 +678,294 @@ body {
 }
 
 
+/* ==================================================
+   PYQ NOTES
+================================================== */
+
+.pyq-section {
+
+    background: #f5f7fa;
+
+    padding: 65px 25px;
+}
+
+
+.pyq-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+.pyq-heading p {
+
+    margin: 0 0 10px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.pyq-heading h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 36px;
+
+    color: #222;
+}
+
+
+.pyq-heading span {
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+
+/* PYQ CARDS */
+
+.pyq-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.pyq-card {
+
+    background: white;
+
+    padding: 30px 25px;
+
+    border-radius: 17px;
+
+    text-align: center;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,0.08);
+
+    transition: 0.25s;
+}
+
+
+.pyq-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,0.12);
+}
+
+
+
+/* PDF ICON */
+
+.pyq-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eef6ff;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+
+
+/* TITLE */
+
+.pyq-card h3 {
+
+    margin: 0 0 12px;
+
+    font-size: 20px;
+
+    color: #222;
+}
+
+
+.pyq-card p {
+
+    margin: 0 0 22px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+
+/* BUTTONS */
+
+.pyq-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.pyq-buttons a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 11px 17px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.pyq-buttons a:hover {
+
+    transform: translateY(-2px);
+}
+
+
+
+/* VIEW PDF */
+
+.pyq-view {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.pyq-view:hover {
+
+    background: #1d4ed8;
+}
+
+
+
+/* DOWNLOAD */
+
+.pyq-download {
+
+    background: #e8f4ff;
+
+    color: #2563eb;
+}
+
+
+.pyq-download:hover {
+
+    background: #dbeafe;
+}
+
+
+
+/* ==================================================
+   PYQ MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .pyq-section {
+
+        padding: 45px 15px;
+
+    }
+
+
+    .pyq-heading h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .pyq-heading span {
+
+        font-size: 15px;
+
+    }
+
+
+    .pyq-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .pyq-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .pyq-card h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .pyq-buttons a {
+
+        padding: 10px 14px;
+
+        font-size: 13px;
+
+    }
+
+}
 
 /* ==================================================
    CONTACT
