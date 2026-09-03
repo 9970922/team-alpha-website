@@ -6,16 +6,22 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background: #f4f7fb;
+
     color: #222;
 }
+
 
 
 /* ==================================================
@@ -25,13 +31,17 @@ body {
 .top-header {
 
     width: 100%;
+
     min-height: 72px;
+
     padding: 8px 25px;
 
     background: #ffffff;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 20px;
@@ -40,14 +50,22 @@ body {
         0 2px 10px rgba(0,0,0,0.10);
 
     position: relative;
-    z-index: 10;
+
+    z-index: 1000;
 }
 
+
+
+/* ==================================================
+   BRAND
+================================================== */
 
 .brand {
 
     display: flex;
+
     align-items: center;
+
     gap: 12px;
 }
 
@@ -55,9 +73,11 @@ body {
 .logo {
 
     width: 58px;
+
     height: 58px;
 
     object-fit: contain;
+
     border-radius: 50%;
 
     display: block;
@@ -84,6 +104,276 @@ body {
 }
 
 
+
+/* ==================================================
+   HEADER RIGHT
+================================================== */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+
+/* ==================================================
+   PYQ HEADER MENU
+================================================== */
+
+.pyq-header-menu {
+
+    position: relative;
+}
+
+
+
+/* PYQ BUTTON */
+
+.pyq-header-button {
+
+    border: none;
+
+    background: #eef6ff;
+
+    color: #2563eb;
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    transition: 0.2s;
+}
+
+
+.pyq-header-button:hover {
+
+    background: #dbeafe;
+
+    transform: translateY(-2px);
+}
+
+
+.pyq-header-button > i:first-child {
+
+    font-size: 17px;
+}
+
+
+.pyq-arrow {
+
+    font-size: 11px;
+
+    color: #666;
+
+    transition: 0.2s;
+}
+
+
+
+/* ==================================================
+   PYQ DROPDOWN
+================================================== */
+
+.pyq-header-dropdown {
+
+    display: none;
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    right: 0;
+
+    width: 560px;
+
+    max-width: 90vw;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.16);
+
+    z-index: 2000;
+}
+
+
+.pyq-header-dropdown.show {
+
+    display: block;
+}
+
+
+
+/* ==================================================
+   PYQ ITEM
+================================================== */
+
+.pyq-item {
+
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.pyq-item:last-child {
+
+    border-bottom: none;
+}
+
+
+
+/* PDF NAME */
+
+.pyq-item-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    min-width: 0;
+}
+
+
+.pyq-item-name i {
+
+    color: #2563eb;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+}
+
+
+.pyq-item-name span {
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+
+/* ==================================================
+   PYQ BUTTONS
+================================================== */
+
+.pyq-item-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+}
+
+
+.pyq-view,
+.pyq-download {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 8px 11px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+
+/* VIEW */
+
+.pyq-view {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.pyq-view:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* DOWNLOAD */
+
+.pyq-download {
+
+    background: #eef6ff;
+
+    color: #2563eb;
+}
+
+
+.pyq-download:hover {
+
+    background: #dbeafe;
+
+    transform: translateY(-2px);
+}
+
+
+
 /* ==================================================
    SOCIAL BUTTONS
 ================================================== */
@@ -91,7 +381,9 @@ body {
 .social-links {
 
     display: flex;
+
     align-items: center;
+
     gap: 8px;
 }
 
@@ -101,6 +393,7 @@ body {
     display: inline-flex;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 7px;
@@ -120,34 +413,49 @@ body {
 
 
 .social i {
+
     font-size: 17px;
 }
 
 
 .social:hover {
+
     transform: translateY(-2px);
 }
 
 
+
+/* WHATSAPP */
+
 .social.whatsapp {
 
     background: #e9f8ef;
+
     color: #128c45;
 }
 
 
+
+/* TELEGRAM */
+
 .social.telegram {
 
     background: #e8f4ff;
+
     color: #168bd0;
 }
 
 
+
+/* INSTAGRAM */
+
 .social.instagram {
 
     background: #fcebf3;
+
     color: #c13584;
 }
+
 
 
 /* ==================================================
@@ -211,8 +519,13 @@ body {
     font-weight: 600;
 
     color: white;
+
+    line-height: 1.8;
 }
 
+
+
+/* HERO BUTTON */
 
 .hero-button {
 
@@ -242,6 +555,7 @@ body {
 
     transform: translateY(-2px);
 }
+
 
 
 /* ==================================================
@@ -300,6 +614,9 @@ body {
 }
 
 
+
+/* SERVICES GRID */
+
 .services-container {
 
     max-width: 1200px;
@@ -314,6 +631,9 @@ body {
     gap: 25px;
 }
 
+
+
+/* SERVICE CARD */
 
 .service-card {
 
@@ -341,9 +661,13 @@ body {
 }
 
 
+
+/* ICON */
+
 .service-icon {
 
     width: 65px;
+
     height: 65px;
 
     margin: 0 auto 20px;
@@ -351,6 +675,7 @@ body {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     background: #eef6ff;
@@ -382,248 +707,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* ==================================================
-   PYQ NOTES MENU
-================================================== */
-
-.pyq-menu-section {
-
-    background: #f4f7fb;
-
-    padding: 30px 20px;
-
-    display: flex;
-
-    justify-content: center;
-}
-
-
-.pyq-menu {
-
-    width: 100%;
-
-    max-width: 1000px;
-}
-
-
-/* MAIN BUTTON */
-
-.pyq-menu-button {
-
-    width: 100%;
-
-    padding: 16px 20px;
-
-    border: none;
-
-    border-radius: 10px;
-
-    background: white;
-
-    color: #111827;
-
-    font-size: 17px;
-
-    font-weight: bold;
-
-    text-align: left;
-
-    cursor: pointer;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    box-shadow:
-        0 4px 15px rgba(0,0,0,0.08);
-
-    transition: 0.2s;
-}
-
-
-.pyq-menu-button:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 7px 20px rgba(0,0,0,0.12);
-}
-
-
-.pyq-menu-button > i:first-child {
-
-    color: #2563eb;
-
-    font-size: 20px;
-}
-
-
-.pyq-arrow {
-
-    margin-left: auto;
-
-    color: #666;
-
-    transition: 0.25s;
-}
-
-
-.pyq-arrow.rotate {
-
-    transform: rotate(180deg);
-}
-
-
-/* DROPDOWN */
-
-.pyq-dropdown {
-
-    display: none;
-
-    margin-top: 8px;
-
-    background: white;
-
-    border-radius: 10px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.08);
-}
-
-
-.pyq-dropdown.show {
-
-    display: block;
-}
-
-
-/* PDF ITEM */
-
-.pyq-item {
-
-    padding: 15px 18px;
-
-    border-bottom: 1px solid #eeeeee;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 15px;
-}
-
-
-.pyq-item:last-child {
-
-    border-bottom: none;
-}
-
-
-/* PDF NAME */
-
-.pyq-item-name {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    color: #222;
-
-    font-size: 15px;
-
-    font-weight: 600;
-}
-
-
-.pyq-item-name i {
-
-    color: #2563eb;
-
-    font-size: 19px;
-}
-
-
-/* PDF BUTTONS */
-
-.pyq-item-buttons {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-}
-
-
-.pyq-view,
-.pyq-download {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 6px;
-
-    padding: 8px 12px;
-
-    border-radius: 6px;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    white-space: nowrap;
-
-    transition: 0.2s;
-}
-
-
-.pyq-view {
-
-    background: #2563eb;
-
-    color: white;
-}
-
-
-.pyq-view:hover {
-
-    background: #1d4ed8;
-}
-
-
-.pyq-download {
-
-    background: #eef6ff;
-
-    color: #2563eb;
-}
-
-
-.pyq-download:hover {
-
-    background: #dbeafe;
-}
-
-
-.pyq-view:hover,
-.pyq-download:hover {
-
-    transform: translateY(-2px);
-}
 
 
 /* ==================================================
@@ -681,6 +764,9 @@ body {
 }
 
 
+
+/* FORM LABEL */
+
 .form-container label {
 
     display: block;
@@ -694,6 +780,9 @@ body {
     color: #111827;
 }
 
+
+
+/* INPUT */
 
 .form-container input,
 .form-container select,
@@ -732,6 +821,9 @@ body {
 }
 
 
+
+/* SUBMIT BUTTON */
+
 .form-container button {
 
     width: 100%;
@@ -764,6 +856,7 @@ body {
 }
 
 
+
 /* ==================================================
    SUCCESS MESSAGE
 ================================================== */
@@ -793,6 +886,9 @@ body {
     color: #555;
 }
 
+
+
+/* SUCCESS SOCIAL BUTTONS */
 
 .success-social-buttons {
 
@@ -842,6 +938,7 @@ body {
 
     background: #E1306C;
 }
+
 
 
 /* ==================================================
@@ -904,6 +1001,7 @@ body {
 }
 
 
+
 /* ==================================================
    FOOTER
 ================================================== */
@@ -930,25 +1028,49 @@ footer p {
 }
 
 
+
 /* ==================================================
    TABLET
 ================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
 
     .services-container {
 
         grid-template-columns:
             repeat(2, 1fr);
+
     }
 
 
-    .hero h1 {
+    .header-right {
 
-        font-size: 32px;
+        gap: 7px;
+
     }
+
+
+    .social {
+
+        padding: 8px 9px;
+
+        font-size: 13px;
+
+    }
+
+
+    .pyq-header-button {
+
+        padding: 8px 10px;
+
+        font-size: 13px;
+
+    }
+
 
 }
+
 
 
 /* ==================================================
@@ -957,13 +1079,15 @@ footer p {
 
 @media (max-width: 700px) {
 
+
     .top-header {
 
-        padding: 10px 15px;
+        padding: 10px 12px;
 
         flex-direction: column;
 
         gap: 10px;
+
     }
 
 
@@ -972,16 +1096,27 @@ footer p {
         width: 100%;
 
         justify-content: center;
+
     }
 
 
-    .social-links {
+    .header-right {
 
         width: 100%;
 
         justify-content: center;
 
         flex-wrap: wrap;
+
+    }
+
+
+    .social-links {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
     }
 
 
@@ -990,78 +1125,40 @@ footer p {
         padding: 7px 9px;
 
         font-size: 12px;
+
     }
 
 
     .social i {
 
         font-size: 15px;
+
     }
 
 
-    .hero {
+    .pyq-header-button {
 
-        padding: 45px 15px;
+        padding: 7px 10px;
+
+        font-size: 12px;
+
     }
 
 
-    .hero h1 {
+    .pyq-header-dropdown {
 
-        font-size: 27px;
-    }
+        position: absolute;
 
+        left: 50%;
 
-    .hero-description {
+        right: auto;
 
-        font-size: 16px;
-    }
+        transform: translateX(-50%);
 
+        width: 94vw;
 
-    .hero-points {
+        max-width: 94vw;
 
-        line-height: 2;
-    }
-
-
-    .services {
-
-        padding: 45px 15px;
-    }
-
-
-    .services-heading h2 {
-
-        font-size: 28px;
-    }
-
-
-    .services-heading span {
-
-        font-size: 15px;
-    }
-
-
-    .services-container {
-
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-
-    /* PYQ MOBILE */
-
-    .pyq-menu-section {
-
-        padding: 20px 12px;
-    }
-
-
-    .pyq-menu-button {
-
-        font-size: 15px;
-
-        padding: 14px 15px;
     }
 
 
@@ -1072,18 +1169,23 @@ footer p {
         align-items: stretch;
 
         gap: 12px;
+
+        padding: 14px;
+
     }
 
 
     .pyq-item-name {
 
-        font-size: 14px;
+        font-size: 13px;
+
     }
 
 
     .pyq-item-buttons {
 
         width: 100%;
+
     }
 
 
@@ -1091,12 +1193,76 @@ footer p {
     .pyq-download {
 
         flex: 1;
+
+        padding: 9px 8px;
+
+        font-size: 12px;
+
+    }
+
+
+    .hero {
+
+        padding: 45px 15px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+    }
+
+
+    .hero-points {
+
+        line-height: 2;
+
+    }
+
+
+    .services {
+
+        padding: 45px 15px;
+
+    }
+
+
+    .services-heading h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .services-heading span {
+
+        font-size: 15px;
+
+    }
+
+
+    .services-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
     }
 
 
     .form-section {
 
         padding: 35px 10px;
+
     }
 
 
@@ -1105,12 +1271,58 @@ footer p {
         width: 100%;
 
         padding: 22px;
+
     }
 
 
     .contact h2 {
 
         font-size: 28px;
+
     }
+
+
+}
+
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width: 450px) {
+
+
+    .social span {
+
+        display: none;
+
+    }
+
+
+    .social {
+
+        width: 38px;
+
+        height: 34px;
+
+        padding: 5px;
+
+    }
+
+
+    .pyq-header-button span {
+
+        display: inline;
+
+    }
+
+
+    .pyq-item-buttons {
+
+        flex-direction: row;
+
+    }
+
 
 }
