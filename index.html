@@ -797,15 +797,18 @@
    PYQ DROPDOWN
 ================================================== */
 
+
 function togglePYQ() {
 
-    const dropdown =
-        document.getElementById("pyqDropdown");
+    const dropdown = document.getElementById("pyqDropdown");
 
-    dropdown.classList.toggle("show");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
 
 }
-
 
 
 /* ==================================================
