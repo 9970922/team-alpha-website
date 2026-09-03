@@ -47,8 +47,6 @@
     </div>
 
 
-    <!-- SOCIAL BUTTONS -->
-
     <div class="social-links">
 
         <a href="https://chat.whatsapp.com/BnS7BNtQrqNAOTZjlluBYs?s=cl&p=a&mlu=4"
@@ -56,7 +54,6 @@
            class="social whatsapp">
 
             <i class="fa-brands fa-whatsapp"></i>
-
             <span>WhatsApp</span>
 
         </a>
@@ -67,7 +64,6 @@
            class="social telegram">
 
             <i class="fa-brands fa-telegram"></i>
-
             <span>Telegram</span>
 
         </a>
@@ -78,13 +74,9 @@
            class="social instagram">
 
             <i class="fa-brands fa-instagram"></i>
-
             <span>Instagram</span>
 
         </a>
-
-
-        
 
     </div>
 
@@ -102,11 +94,9 @@
         WELCOME TO TEAM ALPHA
     </p>
 
-
     <h1>
         Career & Education Counselling
     </h1>
-
 
     <p class="hero-description">
 
@@ -115,7 +105,6 @@
         courses and future.
 
     </p>
-
 
     <div class="hero-points">
 
@@ -132,8 +121,7 @@
 
     </div>
 
-
-    <a href="#counsellingForm"
+    <a href="#counsellingFormSection"
        class="hero-button">
 
         GET COUNSELLING
@@ -150,18 +138,15 @@
 
 <section class="services">
 
-
     <div class="services-heading">
 
         <p>
             WHAT WE OFFER
         </p>
 
-
         <h2>
             Our Counselling Services
         </h2>
-
 
         <span>
 
@@ -173,7 +158,6 @@
     </div>
 
 
-
     <div class="services-container">
 
 
@@ -182,16 +166,12 @@
         <div class="service-card">
 
             <div class="service-icon">
-
                 🎓
-
             </div>
-
 
             <h3>
                 Career Guidance
             </h3>
-
 
             <p>
 
@@ -202,125 +182,18 @@
 
         </div>
 
-<!-- ==================================================
-     PYQ NOTES MENU
-================================================== -->
-
-<section class="pyq-menu-section">
-
-    <div class="pyq-menu">
-
-        <button class="pyq-menu-button" onclick="togglePYQ()">
-            <i class="fa-solid fa-book-open"></i>
-            PYQ Notes
-            <i class="fa-solid fa-chevron-down pyq-arrow"></i>
-        </button>
-
-
-        <div class="pyq-dropdown" id="pyqDropdown">
-
-            <!-- PDF 1 -->
-
-            <div class="pyq-item">
-
-                <div class="pyq-item-name">
-
-                    <i class="fa-solid fa-file-pdf"></i>
-
-                    <span>
-                        Team Alpha MHT CET PYQ Question
-                    </span>
-
-                </div>
-
-
-                <div class="pyq-item-buttons">
-
-                    <a href="Team Alpha MHT Cet PYQ Question.pdf"
-                       target="_blank"
-                       class="pyq-view">
-
-                        <i class="fa-solid fa-eye"></i>
-                        View PDF
-
-                    </a>
-
-
-                    <a href="Team Alpha MHT Cet PYQ Question.pdf"
-                       download
-                       class="pyq-download">
-
-                        <i class="fa-solid fa-download"></i>
-                        Download
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- PDF 2 -->
-
-            <div class="pyq-item">
-
-                <div class="pyq-item-name">
-
-                    <i class="fa-solid fa-ruler-combined"></i>
-
-                    <span>
-                        Matrices MHT CET
-                    </span>
-
-                </div>
-
-
-                <div class="pyq-item-buttons">
-
-                    <a href="matrices-mht-cet.pdf"
-                       target="_blank"
-                       class="pyq-view">
-
-                        <i class="fa-solid fa-eye"></i>
-                        View PDF
-
-                    </a>
-
-
-                    <a href="matrices-mht-cet.pdf"
-                       download
-                       class="pyq-download">
-
-                        <i class="fa-solid fa-download"></i>
-                        Download
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
         <!-- CARD 2 -->
 
         <div class="service-card">
 
             <div class="service-icon">
-
                 📚
-
             </div>
-
 
             <h3>
                 Education Guidance
             </h3>
-
 
             <p>
 
@@ -332,22 +205,17 @@
         </div>
 
 
-
         <!-- CARD 3 -->
 
         <div class="service-card">
 
             <div class="service-icon">
-
                 💻
-
             </div>
-
 
             <h3>
                 IT Career Guidance
             </h3>
-
 
             <p>
 
@@ -359,22 +227,17 @@
         </div>
 
 
-
         <!-- CARD 4 -->
 
         <div class="service-card">
 
             <div class="service-icon">
-
                 🏫
-
             </div>
-
 
             <h3>
                 College & Course Guidance
             </h3>
-
 
             <p>
 
@@ -385,6 +248,131 @@
 
         </div>
 
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PYQ NOTES MENU
+================================================== -->
+
+<section class="pyq-menu-section">
+
+    <div class="pyq-menu">
+
+        <button
+            type="button"
+            class="pyq-menu-button"
+            onclick="togglePYQ()">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <span>
+                PYQ Notes
+            </span>
+
+            <i class="fa-solid fa-chevron-down pyq-arrow"
+               id="pyqArrow"></i>
+
+        </button>
+
+
+        <!-- DROPDOWN -->
+
+        <div class="pyq-dropdown"
+             id="pyqDropdown">
+
+
+            <!-- PDF 1 -->
+
+            <div class="pyq-item">
+
+                <div class="pyq-item-name">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                    <span>
+                        1. Mathematical Logic
+                    </span>
+
+                </div>
+
+
+                <div class="pyq-item-buttons">
+
+                    <a href="pdfs/1Mathematical-logic.pdf"
+                       target="_blank"
+                       class="pyq-view">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View PDF
+
+                    </a>
+
+
+                    <a href="pdfs/1Mathematical-logic.pdf"
+                       download
+                       class="pyq-download">
+
+                        <i class="fa-solid fa-download"></i>
+
+                        Download
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PDF 2 -->
+
+            <div class="pyq-item">
+
+                <div class="pyq-item-name">
+
+                    <i class="fa-solid fa-table-cells-large"></i>
+
+                    <span>
+                        2. Matrices
+                    </span>
+
+                </div>
+
+
+                <div class="pyq-item-buttons">
+
+                    <a href="pdfs/2Matrices.pdf"
+                       target="_blank"
+                       class="pyq-view">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View PDF
+
+                    </a>
+
+
+                    <a href="pdfs/2Matrices.pdf"
+                       download
+                       class="pyq-download">
+
+                        <i class="fa-solid fa-download"></i>
+
+                        Download
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
 
     </div>
 
@@ -416,16 +404,12 @@
         </p>
 
 
-
         <form id="counsellingForm">
 
-
-            <!-- NAME -->
 
             <label for="name">
                 Full Name *
             </label>
-
 
             <input
                 type="text"
@@ -435,13 +419,9 @@
             >
 
 
-
-            <!-- MOBILE -->
-
             <label for="mobile">
                 Mobile Number *
             </label>
-
 
             <input
                 type="tel"
@@ -452,13 +432,9 @@
             >
 
 
-
-            <!-- EMAIL -->
-
             <label for="email">
                 Email Address
             </label>
-
 
             <input
                 type="email"
@@ -467,13 +443,9 @@
             >
 
 
-
-            <!-- EDUCATION -->
-
             <label for="education">
                 Education *
             </label>
-
 
             <select id="education"
                     required>
@@ -505,13 +477,9 @@
             </select>
 
 
-
-            <!-- CITY -->
-
             <label for="city">
                 City
             </label>
-
 
             <input
                 type="text"
@@ -520,15 +488,9 @@
             >
 
 
-
-            <!-- COUNSELLING -->
-
             <label for="counselling">
-
                 What counselling do you need? *
-
             </label>
-
 
             <select id="counselling"
                     required>
@@ -564,15 +526,9 @@
             </select>
 
 
-
-            <!-- QUESTION -->
-
             <label for="question">
-
                 Your Question / Requirement *
-
             </label>
-
 
             <textarea
                 id="question"
@@ -582,13 +538,8 @@
             ></textarea>
 
 
-
-            <!-- SUBMIT -->
-
             <button type="submit">
-
                 Submit Form
-
             </button>
 
 
@@ -604,12 +555,9 @@
                 Thank You! 🎉
             </h3>
 
-
             <p>
-
                 Your counselling form has been
                 submitted successfully.
-
             </p>
 
 
@@ -621,6 +569,7 @@
                    class="success-whatsapp">
 
                     <i class="fa-brands fa-whatsapp"></i>
+
                     Join WhatsApp Group
 
                 </a>
@@ -631,6 +580,7 @@
                    class="success-telegram">
 
                     <i class="fa-brands fa-telegram"></i>
+
                     Join Telegram
 
                 </a>
@@ -641,6 +591,7 @@
                    class="success-instagram">
 
                     <i class="fa-brands fa-instagram"></i>
+
                     Follow Instagram
 
                 </a>
@@ -663,7 +614,6 @@
 
 <section class="contact">
 
-
     <h2>
         Contact Us
     </h2>
@@ -676,9 +626,7 @@
         <strong>Abhijit Sir:</strong>
 
         <a href="tel:9021687884">
-
             9021687884
-
         </a>
 
     </p>
@@ -691,9 +639,7 @@
         <strong>Dhiraj Sir:</strong>
 
         <a href="tel:9511969147">
-
             9511969147
-
         </a>
 
     </p>
@@ -706,9 +652,7 @@
         <strong>Ganesh Sir:</strong>
 
         <a href="tel:8855928907">
-
             8855928907
-
         </a>
 
     </p>
@@ -720,11 +664,8 @@
 
         <strong>Email:</strong>
 
-        <a href="MHTCETSUCCESS85@gmail.com">
-            
-
+        <a href="mailto:MHTCETSUCCESS85@gmail.com">
             MHTCETSUCCESS85@gmail.com
-
         </a>
 
     </p>
@@ -739,7 +680,6 @@
         Pune, Maharashtra
 
     </p>
-
 
 </section>
 
@@ -776,13 +716,38 @@ const form =
 document.getElementById("counsellingForm");
 
 
+
+/* ==================================================
+   PYQ MENU TOGGLE
+================================================== */
+
+function togglePYQ() {
+
+    const dropdown =
+        document.getElementById("pyqDropdown");
+
+    const arrow =
+        document.getElementById("pyqArrow");
+
+    dropdown.classList.toggle("show");
+
+    arrow.classList.toggle("rotate");
+
+}
+
+
+
+/* ==================================================
+   COUNSELLING FORM
+================================================== */
+
 form.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
 
     const formData =
-    new URLSearchParams();
+        new URLSearchParams();
 
 
     formData.append(
@@ -857,15 +822,10 @@ form.addEventListener("submit", async function(event) {
         );
 
         console.error(error);
-        function togglePYQ() {
-
-    const dropdown =
-        document.getElementById("pyqDropdown");
-
-    dropdown.classList.toggle("show");
-
 
     }
+
+});
 
 </script>
 
